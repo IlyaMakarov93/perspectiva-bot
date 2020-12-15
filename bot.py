@@ -29,7 +29,7 @@ def welcome(message):
 
 
 @bot.message_handler(content_types=['text'])
-def lalala(message):
+def bot(message):
     if message.chat.type == 'private':
         if message.text == 'Сайт РООИ Перспектива':
             bot.send_message(message.chat.id,'https://perspektiva-inva.ru/')
